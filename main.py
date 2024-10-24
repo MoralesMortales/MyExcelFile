@@ -2,6 +2,7 @@ from PyQt6 import QtWidgets
 from PyQt6.QtWidgets import QApplication, QWidget
 from menu import Ui_Form
 
+
 class MainApp(QtWidgets.QWidget, Ui_Form):
     def __init__(self):
         super(MainApp, self).__init__()
