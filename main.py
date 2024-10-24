@@ -1,10 +1,16 @@
+from PyQt6 import QtWidgets
 from PyQt6.QtWidgets import QApplication, QWidget
-import sys
+from menu import Ui_Form
 
-app = QApplication(sys.argv)
+class MainApp(QtWidgets.QWidget, Ui_Form):
+    def __init__(self):
+        super(MainApp, self).__init__()
 
-window = QWidget()
-
-window.show()
-
-sys.exit(app.exec())
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Form = QtWidgets.QWidget()
+    ui = Ui_Form()
+    ui.setupUi(Form)
+    Form.show()
+    sys.exit(app.exec())
