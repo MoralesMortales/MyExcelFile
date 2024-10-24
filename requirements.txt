@@ -1,7 +1,6 @@
 click==8.1.7
 dearpygui==1.11.1
 mysql-connector-python==9.0.0
-psycopg2==2.9.9
 psycopg2-binary==2.9.9
 PyQt6==6.4.2
 pyqt6-plugins==6.4.2.2.3
