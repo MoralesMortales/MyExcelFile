@@ -1,0 +1,20 @@
+# Datos del archivo Python convertidos a TXT
+# Archivo de configuración generado automáticamente
+
+user = '31034826'
+prima_transporte = 160.0
+prima_hogar = 160
+prima_alimentacion = 160
+prima_hijo = 12.5
+prima_profesion = {'Bachiller': 0.0, 'TSU': 20.0, 'Profesional': 25, 'Especialista': 30.0, 'Doctor': 40}
+cesta_ticket = '1500'
+institucion = 'Clinica Integral Fundacion del Niño'
+cuenta_institucion = '01020000000000000000'
+prima_anti = {'0': 0, '1': 1.0, '2': 2, '3': 3, '4': 4.0, '5': 5, '6': 6.2, '7': 7.4, '8': 8.6, '9': 9.8, '10': 11, '11': 12.4, '12': 13.8, '13': 15.2, '14': 16.6, '15': 18, '16': 19.6, '17': 21.2, '18': 22.8, '19': 24.4, '20': 26, '21': 27.8, '22': 29.6, '23': 30}
+p_f = 0.5
+i_v_s_s = 4
+f_a_o_v = 1.0
+cuota_sindical = 1
+nombre_licenciada = 'Maria Marta'
+cargo_licenciada = 'jefa de operaciones'
+rif = '323232323'
