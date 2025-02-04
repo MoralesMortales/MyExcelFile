@@ -12,8 +12,8 @@ class create_secretario_window(QWidget, Ui_Form):
     def create_empleado(self):
         connection = pymysql.connect(
                 host='localhost',
-                user='root',
-                password='root',
+                user='user_nomina',
+                password='12345678',
                 database='sc_db',
                 charset='utf8'
                 )

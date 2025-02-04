@@ -20,8 +20,8 @@ class LoginWindow(QWidget, Ui_Login_form):
         try:
             connection = pymysql.connect(
                     host='localhost',
-                    user='root',
-                    password='root',
+                    user='user_nomina',
+                    password='12345678',
                     database='sc_db',
                     charset='utf8'
                 )

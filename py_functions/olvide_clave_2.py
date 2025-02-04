@@ -19,8 +19,8 @@ class olvide_clave_2_window(QWidget, Ui_Form):
         def send_code(self):
             connection = pymysql.connect(
                 host='localhost',
-                user='root',
-                password='root',
+                user='user_nomina',
+                password='12345678',
                 database='sc_db',
                 charset='utf8'
                 )

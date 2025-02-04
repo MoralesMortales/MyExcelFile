@@ -126,8 +126,8 @@ class MainApp(QWidget, Ui_Form):
         self.is_in_nomina = 0
         connection = pymysql.connect(
             host='localhost',
-            user='root',
-            password='root',
+            user='user_nomina',
+            password='12345678',
             database='sc_db',
             charset='utf8'
         )
@@ -255,8 +255,8 @@ class MainApp(QWidget, Ui_Form):
         self.is_in_nomina = 1
         connection = pymysql.connect(
                 host='localhost',
-                user='root',
-                password='root',
+                user='user_nomina',
+                password='12345678',
                 database='sc_db',
                 charset='utf8'
                 )
@@ -292,8 +292,8 @@ class MainApp(QWidget, Ui_Form):
         self.is_in_nomina = 1
         connection = pymysql.connect(
                 host='localhost',
-                user='root',
-                password='root',
+                user='user_nomina',
+                password='12345678',
                 database='sc_db',
                 charset='utf8'
                 )
@@ -329,8 +329,8 @@ class MainApp(QWidget, Ui_Form):
         self.is_in_nomina = 1
         connection = pymysql.connect(
                 host='localhost',
-                user='root',
-                password='root',
+                user='user_nomina',
+                password='12345678',
                 database='sc_db',
                 charset='utf8'
                 )
@@ -364,8 +364,8 @@ class MainApp(QWidget, Ui_Form):
         self.is_in_nomina = 1
         connection = pymysql.connect(
                 host='localhost',
-                user='root',
-                password='root',
+                user='user_nomina',
+                password='12345678',
                 database='sc_db',
                 charset='utf8'
                 )
@@ -487,8 +487,8 @@ class MainApp(QWidget, Ui_Form):
         self.is_in_nomina = 1
         connection = pymysql.connect(
                 host='localhost',
-                user='root',
-                password='root',
+                user='user_nomina',
+                password='12345678',
                 database='sc_db',
                 charset='utf8'
                 )
@@ -518,8 +518,8 @@ class MainApp(QWidget, Ui_Form):
     def startType(self, cedula):
         connection = pymysql.connect(
                 host='localhost',
-                user='root',
-                password='root',
+                user='user_nomina',
+                password='12345678',
                 database='sc_db',
                 charset='utf8'
                 )

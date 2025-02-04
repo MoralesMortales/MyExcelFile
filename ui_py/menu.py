@@ -11,7 +11,10 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import sys 
 import os
-resources_path = sys._MEIPASS
+if getattr(sys, 'frozen', False):  
+    resources_path = sys._MEIPASS  # Carpeta temporal donde PyInstaller extrae los archivos
+else:
+    resources_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 class Ui_Form(object):
     def setupUi(self, Form):
@@ -125,7 +128,7 @@ class Ui_Form(object):
         self.engranaje.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.engranaje.setText("")
         engranaje = os.path.join(resources_path, "images", "engranaje.png")
-        self.engranaje.setPixmap(QtGui.QPixmap("engranaje"))
+        self.engranaje.setPixmap(QtGui.QPixmap(engranaje))
         self.engranaje.setScaledContents(True)
         self.engranaje.setObjectName("engranaje")
         self.horizontalLayout_2.addWidget(self.engranaje)
@@ -235,7 +238,7 @@ class Ui_Form(object):
         self.label.setMaximumSize(QtCore.QSize(800, 800))
         self.label.setStyleSheet("")
         self.label.setText("")
-        userOnDesktop = os.path.join(resources_path, "images", "UserOnDEsktop.png")
+        userOnDesktop = os.path.join(resources_path, "images", "userOnDesktop.png")
         self.label.setPixmap(QtGui.QPixmap(userOnDesktop))
         self.label.setScaledContents(True)
         self.label.setWordWrap(False)

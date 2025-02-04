@@ -74,8 +74,8 @@ class createUserWindow(QWidget, Ui_Form):
         try:
             connection = pymysql.connect(
                 host='localhost',
-                user='root',
-                password='root',
+                user='user_nomina',
+                password='12345678',
                 database='sc_db',
                 charset='utf8')
             try:

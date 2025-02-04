@@ -8,8 +8,8 @@ def initialize_db():
     try:
         connection = pymysql.connect(
             host = 'localhost',
-            user='root',
-            password='root',
+            user='user_nomina',
+            password='12345678',
             charset='utf8'
         )
         connection_cursor = connection.cursor()
@@ -35,8 +35,8 @@ def initialize_db():
         connection.close()
         connection = pymysql.connect(
         host='localhost',
-        user='root',
-        password='root',
+        user='user_nomina',
+        password='12345678',
         database='sc_db',
         charset='utf8'
         )
@@ -67,7 +67,7 @@ def initialize_db():
 );
 
 ""","""INSERT INTO `employee` VALUES
-('Carlos','Moras',31034826,'TSU','Gerente','Ing sistemas','BI','2024-12-02',0,'Clinica del Niño - Juan de Urpin',100,'Mensual',1,0,'333333333333333333','00','',NULL),
+('Carlos','Moras',31034826,'TSU','Gerente','Ing sistemas','BI','2024-12-02',0,'Clinica del Niño - Juan de Urpin',100,'Mensual',1,0,'333333333333333333','00','04128816267','Obrero Fijo');
 ""","""CREATE TABLE `employee_prev` (
   `cedula` int(11) NOT NULL,
   `name` varchar(255) DEFAULT NULL,
@@ -93,6 +93,7 @@ def initialize_db():
   `fecha` date DEFAULT NULL,
   PRIMARY KEY (`nro`)
 );""",
+
 """
 CREATE TABLE `nominas` (
   `cedula` int(11) DEFAULT NULL,
@@ -156,7 +157,7 @@ CREATE TABLE `nominas_prev` (
 );
 ""","""
 INSERT INTO `user` VALUES
-(31034826,'1234',',moralesyaguilera@gmail.com','Privilegiado');
+(31034826,'1234','moralesyaguilera@gmail.com','Privilegiado');
 """
         ]
 
@@ -171,8 +172,12 @@ INSERT INTO `user` VALUES
     finally:
         if connection_cursor:
             connection_cursor.close()
+        else:
+            print('error dude')
         if connection:
             connection.close()
+        else:
+            print('error 2 dude')
         
 initialize_db()
 

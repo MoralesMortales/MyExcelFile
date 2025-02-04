@@ -19,8 +19,8 @@ class olvide_clave_1_window(QWidget, Ui_Form):
             self.cedula = self.ingresa_cedula.text()
             connection = pymysql.connect(
                 host='localhost',
-                user='root',
-                password='root',
+                user='user_nomina',
+                password='12345678',
                 database='sc_db',
                 charset='utf8'
                 )

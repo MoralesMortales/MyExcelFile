@@ -43,8 +43,8 @@ class createNominasSemanal(QWidget, Ui_Form):
 
         connection = pymysql.connect(
             host='localhost',
-            user='root',
-            password='root',
+            user='user_nomina',
+            password='12345678',
             database='sc_db',
             charset='utf8'
         )
@@ -198,8 +198,8 @@ class createNominasSemanal(QWidget, Ui_Form):
         try:
             connection = pymysql.connect(
         host='localhost',
-        user='root',
-        password='root',
+        user='user_nomina',
+        password='12345678',
         database='sc_db',
         charset='utf8'
     )
@@ -232,8 +232,8 @@ class createNominasSemanal(QWidget, Ui_Form):
     def show_nominas(self):
         connection = pymysql.connect(
         host='localhost',
-        user='root',
-        password='root',
+        user='user_nomina',
+        password='12345678',
         database='sc_db',
         charset='utf8'
     )
@@ -302,8 +302,8 @@ select * from employee_prev;
 
         connection = pymysql.connect(
                 host='localhost',
-                user='root',
-                password='root',
+                user='user_nomina',
+                password='12345678',
                 database='sc_db',
                 charset='utf8'
                 )
@@ -452,8 +452,8 @@ select * from employee_prev;
 
         connection = pymysql.connect(
                 host='localhost',
-                user='root',
-                password='root',
+                user='user_nomina',
+                password='12345678',
                 database='sc_db',
                 charset='utf8'
                 )

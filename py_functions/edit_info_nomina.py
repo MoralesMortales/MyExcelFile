@@ -26,8 +26,8 @@ class edit_info_nomina(QWidget, Ui_Form):
     def load_data(self):
          connection = pymysql.connect(
              host='localhost',
-             user='root',
-              password='root',
+             user='user_nomina',
+              password='12345678',
               database='sc_db',
               charset='utf8'
               )
@@ -281,8 +281,8 @@ class edit_info_nomina(QWidget, Ui_Form):
     def handle_filter_change(self):
         connection = pymysql.connect(
             host='localhost',
-            user='root',
-            password='root',
+            user='user_nomina',
+            password='12345678',
             database='sc_db',
             charset='utf8'
         )
@@ -469,8 +469,8 @@ class edit_info_nomina(QWidget, Ui_Form):
     def update_retributions(self, text):
         connection = pymysql.connect(
             host='localhost',
-            user='root',
-            password='root',
+            user='user_nomina',
+            password='12345678',
             database='sc_db',
             charset='utf8',
             )

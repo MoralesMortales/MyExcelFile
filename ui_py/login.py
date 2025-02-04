@@ -11,7 +11,10 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import sys 
 import os
-resources_path = sys._MEIPASS
+if getattr(sys, 'frozen', False):  
+    resources_path = sys._MEIPASS  # Carpeta temporal donde PyInstaller extrae los archivos
+else:
+    resources_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 class Ui_Login_form(object):
     def setupUi(self, Login_form):

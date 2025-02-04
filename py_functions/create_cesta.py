@@ -56,8 +56,8 @@ class show_cesta_window(QWidget, Ui_Form):
         """Ejecuta consultas y devuelve los resultados."""
         connection = pymysql.connect(
             host='localhost',
-            user='root',
-            password='root',
+            user='user_nomina',
+            password='12345678',
             database='sc_db',
             charset='utf8'
         )
@@ -75,8 +75,8 @@ class show_cesta_window(QWidget, Ui_Form):
         """Ejecuta consultas sin devolver resultados."""
         connection = pymysql.connect(
             host='localhost',
-            user='root',
-            password='root',
+            user='user_nomina',
+            password='12345678',
             database='sc_db',
             charset='utf8'
         )
@@ -126,8 +126,8 @@ class show_cesta_window(QWidget, Ui_Form):
       
         connection = pymysql.connect(
             host='localhost',
-            user='root',
-            password='root',
+            user='user_nomina',
+            password='12345678',
             database='sc_db',
             charset='utf8'
         )
@@ -192,8 +192,8 @@ class show_cesta_window(QWidget, Ui_Form):
     
         connection = pymysql.connect(
             host='localhost',
-            user='root',
-            password='root',
+            user='user_nomina',
+            password='12345678',
             database='sc_db',
             charset='utf8'
         )
@@ -240,8 +240,8 @@ class show_cesta_window(QWidget, Ui_Form):
             # Conexión a la base de datos
             connection = pymysql.connect(
                 host='localhost',
-                user='root',
-                password='root',
+                user='user_nomina',
+                password='12345678',
                 database='sc_db',
                 charset='utf8'
             )

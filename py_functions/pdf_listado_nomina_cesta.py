@@ -12,8 +12,8 @@ def generate_pdf_lista(self):
         print('Generando PDF con imágenes y encabezados...')
         connection = pymysql.connect(
             host='localhost',
-            user='root',
-            password='root',
+            user='user_nomina',
+            password='12345678',
             database='sc_db',
             charset='utf8'
         )

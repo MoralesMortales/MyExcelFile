@@ -49,8 +49,8 @@ class editar_empleado_window(QWidget, Ui_Form):
         cedula = self.cedula
         conn = pymysql.connect(
             host='localhost',
-            user='root',
-            password='root',
+            user='user_nomina',
+            password='12345678',
             database='sc_db',
             charset='utf8',
             cursorclass=pymysql.cursors.DictCursor)
@@ -122,8 +122,8 @@ class editar_empleado_window(QWidget, Ui_Form):
         try:
             conn = pymysql.connect(
                 host='localhost',
-                user='root',
-                password='root',
+                user='user_nomina',
+                password='12345678',
                 database='sc_db',
                 charset='utf8')
 

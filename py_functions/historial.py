@@ -29,8 +29,8 @@ class historial_view(QWidget, Ui_Form):
             # Conexión con `with` para garantizar el cierre
             with pymysql.connect(
                     host='localhost',
-                    user='root',
-                    password='root',
+                    user='user_nomina',
+                    password='12345678',
                     database='sc_db',
                     charset='utf8'
                     ) as connection:
@@ -54,8 +54,8 @@ class historial_view(QWidget, Ui_Form):
         try:
             with pymysql.connect(
                     host='localhost',
-                    user='root',
-                    password='root',
+                    user='user_nomina',
+                    password='12345678',
                     database='sc_db',
                     charset='utf8'
                     ) as connection:

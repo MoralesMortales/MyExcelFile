@@ -22,8 +22,8 @@ class createNominaWindow(QWidget, Ui_Form):
         print(asignaciones_user)
         connection = pymysql.connect(
                 host='localhost',
-                user='root',
-                password='root',   
+                user='user_nomina',
+                password='12345678',   
                 database='sc_db',
                 charset='utf8'
                 )
@@ -194,8 +194,8 @@ class createNominaWindow(QWidget, Ui_Form):
         print(cedula_user,'miraaa')
         connection = pymysql.connect(
                 host='localhost',
-                user='root',
-                password='root',
+                user='user_nomina',
+                password='12345678',
                 database='sc_db',
                 charset='utf8'
                 )
@@ -476,8 +476,8 @@ fecha_fin: {fecha_fin}
 
         connection = pymysql.connect(
                 host='localhost',
-                user='root',
-                password='root',
+                user='user_nomina',
+                password='12345678',
                 database='sc_db',
                 charset='utf8'
                 )
