@@ -7,9 +7,11 @@ from py_functions.login_window import LoginWindow
 
 
 def initialize_db():
+    connection = None
+    connection_cursor = None
     try:
         connection = pymysql.connect(
-            host="localhost", user="lup", password="Alfabeto624", charset="utf8"
+            host="localhost", user="user_nomina", password="12345678", charset="utf8"
         )
         connection_cursor = connection.cursor()
 
@@ -36,8 +38,8 @@ def initialize_db():
         connection.close()
         connection = pymysql.connect(
             host="localhost",
-            user="lup",
-            password="Alfabeto624",
+            user="user_nomina",
+            password="12345678",
             database="sc_db",
             charset="utf8",
         )
