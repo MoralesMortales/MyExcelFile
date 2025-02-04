@@ -1,4 +1,4 @@
-## What is?
+## What's It?
 This Software is a tool designed in order to help to employees on their regular activities creating Nominas. (A nomina is known in English as the Payroll or Salary). <br><br>Besides, this proyect was the **first one** where I had created a GUI Software.
 
 ### What can It do?
