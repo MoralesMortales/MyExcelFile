@@ -11,6 +11,7 @@ class editar_empleado_window(QWidget, Ui_Form):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+        self.setWindowTitle("Editar Empleado")
         self.cedula = 0
         doubleRange = QDoubleValidator(0.0, 9999.9, 2, self)
         intRange = QDoubleValidator(0.0, 99.9, 0, self)

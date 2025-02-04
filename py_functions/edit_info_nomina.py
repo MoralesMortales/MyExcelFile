@@ -8,6 +8,7 @@ class edit_info_nomina(QWidget, Ui_Form):
     def __init__(self):   
        super().__init__()
        self.setupUi(self)
+       self.setWindowTitle("Editar Nomina")
        self.cedula = 0
        self.c_type = ''
        self.filter.stateChanged.connect(self.handle_filter_change)

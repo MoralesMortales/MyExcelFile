@@ -18,6 +18,7 @@ class createNominasMensual(QWidget, Ui_Form):
     def __init__(self):   
        super().__init__()
        self.setupUi(self)
+       self.setWindowTitle("Crear Nomina")
        self.model = QStandardItemModel()
        self.proxy_model = QSortFilterProxyModel()
        self.proxy_model.setSourceModel(self.model)

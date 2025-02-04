@@ -8,6 +8,7 @@ class edit_secretario_window(QWidget, Ui_Form):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+        self.setWindowTitle("Crear Empleado de Gestion")
         self.aceptar.clicked.connect(self.edit_secretario)
 
     def edit_secretario(self):
@@ -26,7 +27,6 @@ class edit_secretario_window(QWidget, Ui_Form):
                 queryc = "select cedula from employee where cedula = %s"
                 cursor.execute(queryc, conf.user)
                 user_cedula = cursor.fetchone()
-
 
                 query = "SELECT count(*) from user where cedula = %s"
                 cursor.execute(query, (cedula,))

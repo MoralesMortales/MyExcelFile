@@ -6,11 +6,8 @@ class info_nomina_window(QWidget, Ui_Form):
         def __init__(self):
             super().__init__()
             self.setupUi(self)
+            self.setWindowTitle("Informacion de Nomina")
             self.cedula = 0
-            #self.confirm = ConfirmDialog()
-            #self.edit = editar_empleado_window()
-            #self.eliminar_btn.clicked.connect(self.delete_user)
-            #self.editar_btn.clicked.connect(self.edit_user)
 
         def load_data(self):
             connection = pymysql.connect(

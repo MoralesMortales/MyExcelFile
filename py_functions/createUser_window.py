@@ -16,6 +16,8 @@ class createUserWindow(QWidget, Ui_Form):
        self.historial = historial_view()
 
        self.setupUi(self)
+       self.setWindowTitle("Crear Empleado")
+
        doubleRange = QDoubleValidator(0.0,9999.9,2,self)
        intRange = QDoubleValidator(0.0,99.9,0,self)
        regex = QRegExp("^[a-zA-Z ]+$")

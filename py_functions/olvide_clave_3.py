@@ -6,6 +6,7 @@ class olvide_clave_3_window(QWidget, Ui_Form):
         def __init__(self):
             super().__init__()
             self.setupUi(self)
+            self.setWindowTitle("Olvide la Clave")
             self.exit.clicked.connect(self.salir)
             self.actualizar.clicked.connect(self.cambiar_clave)
 #e

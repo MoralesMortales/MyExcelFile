@@ -8,6 +8,7 @@ class delete_secretario_window(QWidget, Ui_Form):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+        self.setWindowTitle("Borrar Empleado de Gestion")
         self.aceptar.clicked.connect(self.delete_secretario)
 
     def delete_secretario(self):

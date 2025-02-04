@@ -17,6 +17,7 @@ class show_cesta_window(QWidget, Ui_Form):
         self.setupUi(self)
         self.historial = historial_view()
         self.model = QStandardItemModel()
+        self.setWindowTitle("Crear Nomina")
         self.proxy_model = QSortFilterProxyModel()
         self.proxy_model.setSourceModel(self.model)
         self.tableView.setModel(self.proxy_model)

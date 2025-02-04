@@ -3,7 +3,6 @@ from PyQt5.QtWidgets import QApplication, QDialog, QVBoxLayout, QLabel, QPushBut
 class ConfirmDialog(QDialog):
     def __init__(self, message="¿Estás seguro?"):
         super().__init__()
-        self.setWindowTitle("Confirmar acción")
         self.setGeometry(100, 100, 300, 150)
         self.result = False  # Almacena el resultado de la selección
 

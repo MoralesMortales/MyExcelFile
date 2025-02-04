@@ -7,6 +7,7 @@ class create_secretario_window(QWidget, Ui_Form):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+        self.setWindowTitle("Crear Empleado de Gestion")
         self.aceptar.clicked.connect(self.create_empleado)
 
     def create_empleado(self):

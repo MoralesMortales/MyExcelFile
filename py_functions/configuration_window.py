@@ -11,6 +11,7 @@ class configurationWindow(QWidget, Ui_Form):
         self.institucion.setMaxLength(20)
         self.rif.setMaxLength(9)
         self.ffgf.setText(str(conf.cesta_ticket))
+        self.setWindowTitle("Configuracion")
         self.institucion_2.setText(str(conf.institucion))
         self.institucion.setText(str(conf.cuenta_institucion))
         self.nombre_licenciada.setText(str(conf.nombre_licenciada))

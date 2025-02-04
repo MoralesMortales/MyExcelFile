@@ -10,6 +10,7 @@ class edit_info_cestaticket(QWidget, Ui_Form):
     def __init__(self):   
         super().__init__()
         self.setupUi(self)
+        self.setWindowTitle("Editar Nomina")
         self.lineEdit.setValidator(QIntValidator(0, 30))  # Solo permite valores de 0 a 30
         self.lineEdit.textChanged.connect(lambda text: self.update_off_days(text))
         self.cedula = 0

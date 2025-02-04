@@ -9,6 +9,7 @@ class info_empleado_window(QWidget, Ui_Form):
     def __init__(self):   
        super().__init__() 
        self.setupUi(self)
+       self.setWindowTitle("Informacion del Empleado")
        self.cedula = 0
        self.confirm = ConfirmDialog()
        self.edit = editar_empleado_window()

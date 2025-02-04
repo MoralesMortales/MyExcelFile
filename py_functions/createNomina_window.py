@@ -10,6 +10,7 @@ class createNominaWindow(QWidget, Ui_Form):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+        self.setWindowTitle("Crear Nomina")
         self.calculate_btn.clicked.connect(self.calculatenomina)
         self.calendarWidget_2.clicked.connect(self.on_calendar_clicked)
         self.create_nomina_btn.clicked.connect(self.creatingNomina)

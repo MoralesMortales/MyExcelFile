@@ -9,6 +9,7 @@ class LoginWindow(QWidget, Ui_Login_form):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+        self.setWindowTitle("Gestor de Nominas - Fundacion del Niño")
         self.olvide_clave = olvide_clave_1_window()
         self.mainWindow = MainApp()
         self.label_9.mousePressEvent = self.forgot_password
