@@ -22,6 +22,9 @@ This Software is a tool designed in order to help to employees on their regular 
 - Git
 - Figma
 
+<details>
+  <summary>Software Preview</summary>
+  
 ### Software Preview
 
 Login Page
@@ -39,3 +42,4 @@ Create User
 Create Nominas
 
 ![image](https://github.com/user-attachments/assets/6aece017-3123-4c77-b5e6-9e19a9fc09db)
+</details>
