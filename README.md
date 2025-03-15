@@ -1,14 +1,14 @@
 ## What's It?
-This Software is a tool designed in order to help to employees on their regular activities creating Nominas. (A nomina is known in English as the Payroll or Salary). <br><br>Besides, this proyect was the **first one** where I had created a GUI Software.
+This Software is a tool designed in order to help to employees on their regular activities creating Payrolls. <br><br>Besides, this proyect was the **first one** where I had created a GUI Software.
 
 ### What can It do?
 
-- Create Nominas by groups, each group is separate by its nomina type (weekly, bimonthly, montly and Cestaticket).
-- Generate the Nomina's Recipts with the total payments of each employee (Employee's Receipt). Given on PDF format.
+- Create Payrolls by groups, each group is separate by its payroll type (weekly, bimonthly, montly and Cestaticket).
+- Generate the payroll's Recipts with the total payments of each employee (Employee's Receipt). Given on PDF format.
 - Generate the list of the amount to pay to each group of employees with their respective amounts implied. Given on PDF format.
 - Add, Edit and Delete Employees on the Database.
-- Change values from the configuration window such as Fundation's RIF, Costs of variables implied on Nomina's formulas.
-- See on the History all the changes already done (add employee, create Nominas, delete employee, etc).
+- Change values from the configuration window such as Fundation's RIF, Costs of variables implied on payroll's formulas.
+- See on the History all the changes already done (add employee, create payrolls, delete employee, etc).
 
 #### Languages Used
 
